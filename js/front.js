@@ -109,14 +109,6 @@ $.fn.alignElementsSameHeight = function () {
     });
 }
 
-$(window).load(function () {
-
-    windowWidth = $(window).width();
-
-    $(this).alignElementsSameHeight();
-
-
-});
 $(window).resize(function () {
 
     newWindowWidth = $(window).width();
