@@ -108,16 +108,3 @@ $.fn.alignElementsSameHeight = function () {
         children.innerHeight(maxHeight);
     });
 }
-
-$(window).resize(function () {
-
-    newWindowWidth = $(window).width();
-
-    if (windowWidth !== newWindowWidth) {
-        setTimeout(function () {
-            $(this).alignElementsSameHeight();
-        }, 100);
-        windowWidth = newWindowWidth;
-    }
-
-});
